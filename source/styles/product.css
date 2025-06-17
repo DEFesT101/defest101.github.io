@@ -1,0 +1,12 @@
+.carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: transparent; 
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      opacity: 0.7;
+    }
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      opacity: 1;
+    }

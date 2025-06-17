@@ -1,4 +1,4 @@
-@import url();
+/* @import url();
 
 body{
     background: #fffcef;
@@ -129,6 +129,230 @@ h2{
 
 @media (max-width: 755px){
     .carouselExampleIndicators{
+        display: none;
+    }
+} */
+
+@import url();
+
+body {
+    background: #fffcef;
+    font-family: "Montserrat Medium 600", serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+.navbar {
+    background-color: rgb(143, 29, 44);
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+}
+
+.container-fluid {
+    margin-top: 0;
+}
+
+.navbar-collapse {
+    justify-content: center; /* Текст по центру */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fffcef;
+    font-size: 18px; /* Увеличим размер текста для красоты */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(196, 194, 194);
+}
+
+.navbar-brand img {
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    display: block; /* Убираем лишние края сверху и снизу */
+    height: auto; /* Автоматическая высота для пропорций */
+    object-fit: contain; /* Обрезаем лишние пространства */
+}
+
+.navbar-toggler {
+    color: #fffcef;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 10px;
+    right: 20px; /* Бургер остается в правом углу */
+    width: 40px; /* Увеличение ширины кнопки */
+    height: 40px; /* Увеличение высоты кнопки */
+    padding: 0; /* Убираем внутренние отступы */
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: center; /* Выравнивание по горизонтали */
+}
+
+.navbar-toggler-icon {
+    color: #fffcef;
+    width: 30px; /* Увеличенный размер иконки внутри */
+    height: 30px; /* Увеличенный размер иконки внутри */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-width='2' d='M4 8h22M4 15h22M4 22h22'/%3e%3c/svg%3e");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-width='2' d='M4 8l22 22M26 8l-22 22'/%3e%3c/svg%3e");
+}
+
+.nav-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center; /* Центрируем иконки в меню */
+    margin-top: 10px;
+}
+
+.nav-icons a {
+    text-decoration: none;
+}
+
+.nav-icons img {
+    width: 30px;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+    transition: transform 0.3s;
+}
+
+.nav-icons img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(143, 29, 44);
+        padding: 20px;
+        z-index: 1000;
+        display: none; /* Скрываем по умолчанию */
+    }
+    .navbar-collapse.show {
+        display: flex; /* Показываем при активации */
+    }
+    .nav-icons {
+        display: flex; /* Иконки видны только в раскрытом меню */
+    }
+    .nav-social {
+        display: none; /* Скрываем соцсети в правом углу на узких экранах */
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .nav-item {
+        margin: 0 15px;
+    }
+    .nav-icons {
+        display: none; /* Скрываем иконки в меню на десктопе */
+    }
+    .nav-social {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-social a {
+        text-decoration: none;
+    }
+    .nav-social img {
+        width: 30px;
+        display: block;
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 5px;
+        transition: transform 0.3s;
+    }
+    .nav-social img:hover {
+        transform: scale(1.1);
+    }
+    .navbar-toggler {
+        display: none; /* Скрываем бургер на десктопе */
+    }
+}
+
+.card {
+    background-color: #fffcef;
+}
+
+.card .btn {
+    color: #313131;
+}
+
+.card a {
+    text-decoration: none;
+    color: #313131;
+}
+
+footer {
+    background-color: rgb(143, 29, 44);
+}
+
+.footer-text {
+    color: #fffcef;
+    margin: auto auto;
+}
+
+.media-links {
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes call {
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+    15% {
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+@media (max-width: 755px) {
+    .carouselExampleIndicators {
         display: none;
     }
 }
