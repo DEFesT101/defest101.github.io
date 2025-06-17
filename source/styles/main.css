@@ -1,138 +1,3 @@
-/* @import url();
-
-body{
-    background: #fffcef;
-    font-family: Montserrat medium 600, serif;
-}
-
-.navbar {
-    background-color:rgb(143, 29, 44);
-    padding-left: 0; 
-    padding-right: 0;
-    margin-top: 0;
-}
-
-.container-fluid {
-    
-    margin-top: 0;
-  }
-
-.navbar-collapse{
-    display: flex; 
-    align-items: center;
-}
-
-.nav-link{
-    color: #fffcef;
-}
-.navbar-nav .nav-link .active{
-    color: rgb(196, 194, 194);
-}
-.navbar-brand img{
-    width: 150px;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-toggler {
-    color: #fffcef;
-}
-.navbar-toggler-icon{
-    color: #fffcef;
-}
-
-.nav-icons {
-    list-style: none; 
-    padding: 0; 
-    margin: 0;
-    display: flex; 
-    align-items: center;
-    gap: 10px; 
-    margin-left: auto;
-    margin-right: 0;
-}
-.nav-icons a {
-    text-decoration: none; 
-}
-.nav-icons img {
-    width: 30px;
-    display: block; 
-}
-
-
-
-.card{
-    background-color: #fffcef;
-}
-.card .btn {
-    color: #313131;
-}
-.card a{
-    text-decoration: none;
-    color: #313131;
-}
-
-
-
-footer{
-    background-color:rgb(143, 29, 44);
-}
-.footer-text{
-    color: #fffcef;
-    margin: auto auto;
-}
-.media-links{ 
-
-    justify-content: center;
-    align-items: center;
-}
-
-h1{
-    color: red;
-    text-align: center;
-}
-h2{
-    text-align: center;
-    color: #313131;
-}
-.txt{
-    color: rgb(143, 29, 44)
-}
-
-@keyframes call {
-	0%,
-	100% {
-		transform: translateX(0%);
-		transform-origin: 50% 50%;
-	}
-
-	15% {
-		transform: translateX(-30px) rotate(-6deg);
-	}
-
-	30% {
-		transform: translateX(15px) rotate(6deg);
-	}
-
-	45% {
-		transform: translateX(-15px) rotate(-3.6deg);
-	}
-
-	60% {
-		transform: translateX(9px) rotate(2.4deg);
-	}
-
-	75% {
-		transform: translateX(-6px) rotate(-1.2deg);
-	}
-}
-
-@media (max-width: 755px){
-    .carouselExampleIndicators{
-        display: none;
-    }
-} */
-
 @import url();
 
 body {
@@ -356,3 +221,32 @@ footer {
         display: none;
     }
 }
+.profile-header {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .section-title {
+      color: #313131;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .order-card {
+      background-color: #fffcef;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .btn-logout {
+      background-color: #dc3545;
+      color: #ffffff;
+    }
+    .btn-logout:hover {
+      background-color: #c82333;
+    }
+    .footer {
+      background-color: #ff0000;
+      color: #ffffff;
+      padding: 20px 0;
+    }
