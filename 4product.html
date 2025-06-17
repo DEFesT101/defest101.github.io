@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANEURYSM - Shope</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="source/styles/main.css">
+  <link rel="stylesheet" href="source/styles/img.css">
+  <style>
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: transparent; 
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      opacity: 0.7;
+    }
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid" style="padding: 0;">
+      <a class="navbar-brand" href="index.html" style="margin: 0; padding: 0;">
+        <img src="source/imagers/Logo.jpg" alt="логотип" style="margin: 0; padding: 0; vertical-align: top;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="shop.html">Каталог/магазин</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="personalacc.html">Личный кабинет</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Call.html">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inform.html">О нас</a>
+          </li>
+        </ul>
+        <div class="d-none d-md-flex align-items-center justify-content-center gap-2 nav-icons">
+          <li class="nav-item">
+            <a href="https://vk.com/lucaclinic"><img src="source/failes/VK-krymavtotex.ru.png" alt="Вконтакте"></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://t.me/artewear"><img src="source/failes/tg.png" alt="Телеграмм"></a>
+          </li>
+        </div>
+      </div>
+      <div class="d-md-none text-center mt-3">
+        <div class="d-flex justify-content-center gap-2">
+          <li class="nav-item">
+            <a href="https://vk.com/lucaclinic"><img src="source/failes/VK-krymavtotex.ru.png" alt="Вконтакте"></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://t.me/artewear"><img src="source/failes/tg.png" alt="Телеграмм"></a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section>
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-10">
+        <div class="row">
+          <div class="col-12">
+            <div class="card border-0" style="background-color: #fffcef;">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="source/imagers/1515.jpg" class="d-block w-100" alt="ANEURYSM">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="source/imagers/1516.jpg" class="d-block w-100" alt="Additional Image 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="source/imagers/1517.jpg" class="d-block w-100" alt="Additional Image 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="source/imagers/1518.jpg" class="d-block w-100" alt="Additional Image 3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="source/imagers/1519.jpg" class="d-block w-100" alt="Additional Image 4">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Следующий</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-body">
+                    <h2 class="card-title">‘SPINE’ tshirt</h2>
+                    <h6>Описание:</h6>
+                    <p>'SPINE' tshirt воплощает силу и стабильность, вдохновленная анатомией. Идеальна для активного образа жизни и повседневного использования.</p>
+                    <h6>Состав:</h6>
+                    <p>100% хлопок, прочная ткань для надежности и долговечности.</p>
+                    <div class="mb-3">
+                      <label for="sizeSelect" class="form-label">Выберите размер:</label>
+                      <select class="form-select" id="sizeSelect">
+                        <option selected>Выберите размер</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                      </select>
+                    </div>
+                    <p class="text-center mt-3"><strong>Цена: 3290₽</strong></p>
+                    <div class="text-center mt-3">
+                      <button type="button" class="btn" style="background-color: #313131; color: #fff;" data-bs-toggle="modal" data-bs-target="#purchaseModal">Купить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="mt-4">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 footer-text text-center">
+        <p>Все права защищены 2025<br>Контакты<br>О нас</p>
+        <a href="https://vk.com/lucaclinic"><img style="width: 40px; margin-inline: 1em;" src="source/failes/VK-krymavtotex.ru.png" alt="Вконтакте"></a>
+        <a href="https://t.me/artewear"><img style="width: 40px; margin-inline: 1em;" src="source/failes/tg.png" alt="Телеграмм"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="purchaseModalLabel">Подтверждение покупки</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="source/imagers/1515.jpg" class="img-fluid mb-3" style="max-width: 50%;" alt="ANEURYSM">
+        <p>Вы выбрали ‘SPINE’ tshirt за 3290₽. Размер: <span id="selectedSize">Не выбран</span>.</p>
+        <p>Добавить в корзину?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" style="background-color: #313131; color: #fff;" data-bs-dismiss="modal">Отмена</button>
+        <button type="button" class="btn" style="background-color: #313131; color: #fff;" id="addToCart">Добавить в корзину</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+<script>
+  document.getElementById('sizeSelect').addEventListener('change', function() {
+    const selectedSize = this.value;
+    document.getElementById('selectedSize').textContent = selectedSize !== 'Выберите размер' ? selectedSize : 'Не выбран';
+  });
+
+  document.getElementById('addToCart').addEventListener('click', function() {
+    const selectedSize = document.getElementById('sizeSelect').value;
+    if (selectedSize === 'Выберите размер') {
+      alert('Пожалуйста, выберите размер перед добавлением в корзину.');
+    } else {
+      alert('Товар "ANEURYSM" (размер: ' + selectedSize + ') добавлен в корзину!');
+      document.getElementById('purchaseModal').querySelector('[data-bs-dismiss="modal"]').click();
+    }
+  });
+</script>
+</body>
+</html>

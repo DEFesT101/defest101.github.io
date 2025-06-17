@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет - Shope</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="source/styles/main.css">
+  <link rel="stylesheet" href="source/styles/img.css">
+  <style>
+    .profile-header {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .section-title {
+      color: #313131;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .order-card {
+      background-color: #fffcef;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .btn-logout {
+      background-color: #dc3545;
+      color: #ffffff;
+    }
+    .btn-logout:hover {
+      background-color: #c82333;
+    }
+    .footer {
+      background-color: #ff0000;
+      color: #ffffff;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid" style="padding: 0;">
+      <a class="navbar-brand" href="index.html" style="margin: 0; padding: 0;">
+        <img src="source/imagers/Logo.jpg" alt="логотип" style="margin: 0; padding: 0;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Каталог/магазин</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="personalacc.html">Личный кабинет</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Call.html">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inform.html">О нас</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center justify-content-center gap-2 nav-icons">
+          <li class="nav-item">
+            <a href="https://vk.com/lucaclinic"><img src="source/failes/VK-krymavtotex.ru.png" alt="Вконтакте"></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://t.me/artewear"><img src="source/failes/tg.png" alt="телеграмм"></a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="section-title">Личный кабинет</h1>
+        
+        <!-- Приветствие и профиль -->
+        <div class="profile-header">
+          <h4>Привет, [Имя пользователя]!</h4>
+          <p>Добро пожаловать в ваш личный кабинет. Здесь вы можете управлять своими данными и отслеживать заказы.</p>
+          <p><strong>Email:</strong> user@example.com</p>
+          <p><strong>Дата регистрации:</strong> 01.06.2025</p>
+          <button class="btn btn-logout mt-3">Выйти</button>
+        </div>
+
+        <!-- История заказов -->
+        <h4 class="section-title mt-4">История заказов</h4>
+        <div class="order-card">
+          <p><strong>Заказ #001</strong> | Дата: 10.06.2025</p>
+          <p>Товар: 'ANEURYSM' (Размер: M) | Статус: Доставлен</p>
+          <p>Сумма: 3590₽</p>
+        </div>
+        <div class="order-card">
+          <p><strong>Заказ #002</strong> | Дата: 15.06.2025</p>
+          <p>Товар: 'DISSECTION' black (Размер: L) | Статус: В обработке</p>
+          <p>Сумма: 3290₽</p>
+        </div>
+
+        <!-- Редактирование профиля -->
+        <h4 class="section-title mt-4">Редактировать профиль</h4>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Имя</label>
+            <input type="text" class="form-control" id="name" value="[Имя пользователя]" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Электронная почта</label>
+            <input type="email" class="form-control" id="email" value="user@example.com" required>
+          </div>
+          <button type="submit" class="btn" style="background-color: #313131; color: #fff;">Сохранить изменения</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="mt-4 py-3" style="background-color: #ff0000; color: #ffffff;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 footer-text text-center">
+        <p>Все права защищены 2025<br><a href="Call.html" style="color: #ffffff;">Контакты</a><br><a href="inform.html" style="color: #ffffff;">О нас</a></p>
+        <a href="https://vk.com/lucaclinic"><img style="width: 40px; margin-inline: 1em;" src="source/failes/VK-krymavtotex.ru.png" alt="Вконтакте"></a>
+        <a href="https://t.me/artewear"><img style="width: 40px; margin-inline: 1em;" src="source/failes/tg.png" alt="телеграмм"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+</body>
+</html>
